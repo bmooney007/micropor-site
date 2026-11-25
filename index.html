@@ -5,15 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Micropor | Safety & Industrial Supplies</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .category-section { margin: 2.5rem 0; }
+    .category-section h2 { color: #0f766e; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    .subcats { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.75rem; }
+    .subcats a { display: block; background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 0.75rem 1rem; text-decoration: none; color: #1e293b; font-weight: 500; transition: all 0.15s; }
+    .subcats a:hover { border-color: #0f766e; background: #f0fdfa; color: #0f766e; }
+  </style>
 </head>
 <body>
   <header>
     <a href="index.html">Micropor</a>
     <nav>
       <a href="index.html">Home</a>
-      <a href="categories/gloves.html">Gloves</a>
-      <a href="categories/respirators.html">Respirators</a>
-      <a href="categories/cert.html">CERT</a>
+      <a href="#safety">Safety</a>
+      <a href="#packaging">Packaging</a>
+      <a href="#janitorial">Janitorial</a>
+      <a href="#cert">CERT</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -21,10 +29,55 @@
   <div class="container">
     <div class="hero">
       <h1>Safety & Industrial Supplies</h1>
-      <p>Quality gloves, respirators, CERT kits, and more. Rebuilt as a modern static site.</p>
+      <p>Quality gloves, respirators, CERT kits, packaging, and more.</p>
     </div>
 
-    <h2>Featured Products</h2>
+    <div class="category-section" id="safety">
+      <h2>Safety Products</h2>
+      <div class="subcats">
+        <a href="categories/gloves.html">Gloves</a>
+        <a href="#">Eye Protection</a>
+        <a href="categories/respirators.html">Respirators</a>
+        <a href="#">Head Protection</a>
+        <a href="#">Hearing Protection</a>
+        <a href="#">First Aid</a>
+        <a href="#">Protective Apparel</a>
+        <a href="#">HI VIZ Apparel</a>
+        <a href="#">Safety Vests</a>
+        <a href="#">Cold Weather</a>
+      </div>
+    </div>
+
+    <div class="category-section" id="packaging">
+      <h2>Packaging Products</h2>
+      <div class="subcats">
+        <a href="#">Poly Bags</a>
+        <a href="#">Sample Bags</a>
+        <a href="#">Cable Ties</a>
+        <a href="#">Packaging Tape</a>
+      </div>
+    </div>
+
+    <div class="category-section" id="janitorial">
+      <h2>Janitorial & Sanitation Products</h2>
+      <div class="subcats">
+        <a href="#">Sanitizer</a>
+        <a href="#">Cleaning Supplies</a>
+        <a href="#">Disposables</a>
+      </div>
+    </div>
+
+    <div class="category-section" id="cert">
+      <h2>CERT Products</h2>
+      <div class="subcats">
+        <a href="categories/cert.html">CERT Kits</a>
+        <a href="#">Backpacks & Bags</a>
+        <a href="#">CERT Apparel</a>
+        <a href="#">Tools & Accessories</a>
+      </div>
+    </div>
+
+    <h2 style="margin-top:3rem;">Featured Products</h2>
     <div class="grid" id="featured"></div>
   </div>
 
