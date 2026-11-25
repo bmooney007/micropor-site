@@ -4,7 +4,7 @@
   --text: #1e293b;
   --muted: #64748b;
   --accent: #800000;
-  --accent-hover: #5c0000;
+  --accent-hover: #800000;
   --border: #e2e8f0;
   --sale: #dc2626;
 }
@@ -36,7 +36,7 @@ nav a:hover { color: white; }
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
 
 .hero {
-  background: linear-gradient(135deg, #800000 0%, #5c0000 100%);
+  background: #800000;
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -62,7 +62,7 @@ nav a:hover { color: white; }
 .card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
 .card-body { padding: 1rem 1.25rem; }
 .card h3 { margin: 0 0 0.5rem; font-size: 1rem; }
-.price { font-weight: 700; color: var(--accent); font-size: 1.125rem; }
+.price { font-weight: 700; color: #800000; font-size: 1.125rem; }
 .list-price { text-decoration: line-through; color: var(--muted); font-size: 0.875rem; margin-left: 0.5rem; }
 .sale { color: var(--sale); font-weight: 700; }
 
