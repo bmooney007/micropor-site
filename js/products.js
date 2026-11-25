@@ -24,7 +24,7 @@ const products = [
     price: "50.48",
     listPrice: "80.99",
     code: "CERTKIT3",
-    category: "cert",
+    category: "cert-kits",
     description: "Deluxe backpack CERT kit with multiple compartments."
   },
   {
@@ -51,7 +51,7 @@ const products = [
     price: "14.89",
     listPrice: "21.99",
     code: "CLO-C2930J-C2931J",
-    category: "apparel",
+    category: "safety-vests",
     description: "EXPANDABLE VEST. 100% ANSI certified ultra-lightweight fluorescent polyester mesh. Non-conductive zipper front closure. Adjustable velcro waistband."
   }
 ];
