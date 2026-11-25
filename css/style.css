@@ -3,8 +3,8 @@
   --card: #ffffff;
   --text: #1e293b;
   --muted: #64748b;
-  --accent: #0f766e;
-  --accent-hover: #0d9488;
+  --accent: #800000;
+  --accent-hover: #5c0000;
   --border: #e2e8f0;
   --sale: #dc2626;
 }
@@ -36,7 +36,7 @@ nav a:hover { color: white; }
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
 
 .hero {
-  background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+  background: linear-gradient(135deg, #800000 0%, #5c0000 100%);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
