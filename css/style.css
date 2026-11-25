@@ -1,0 +1,80 @@
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --accent: #0f766e;
+  --accent-hover: #0d9488;
+  --border: #e2e8f0;
+  --sale: #dc2626;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header {
+  background: #0f172a;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header a { color: white; text-decoration: none; font-weight: 600; font-size: 1.25rem; }
+nav a { color: #cbd5e1; margin-left: 1.5rem; text-decoration: none; }
+nav a:hover { color: white; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+
+.hero {
+  background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.hero h1 { margin: 0 0 0.5rem; font-size: 2.5rem; }
+.hero p { margin: 0; font-size: 1.125rem; opacity: 0.9; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+.card-body { padding: 1rem 1.25rem; }
+.card h3 { margin: 0 0 0.5rem; font-size: 1rem; }
+.price { font-weight: 700; color: var(--accent); font-size: 1.125rem; }
+.list-price { text-decoration: line-through; color: var(--muted); font-size: 0.875rem; margin-left: 0.5rem; }
+.sale { color: var(--sale); font-weight: 700; }
+
+footer {
+  background: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 640px) {
+  header { flex-direction: column; gap: 0.75rem; }
+  .hero h1 { font-size: 1.75rem; }
+}
