@@ -6,9 +6,27 @@
   <title>Gloves | Micropor</title>
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .subcats { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0 2rem; }
-    .subcats a { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 0.5rem 1rem; text-decoration: none; color: #1e293b; font-weight: 500; }
-    .subcats a:hover { border-color: #0f766e; color: #0f766e; }
+    .subcats {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 0.75rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .subcats a {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 0.65rem 0.9rem;
+      text-decoration: none;
+      color: #1e293b;
+      font-weight: 500;
+      text-align: center;
+    }
+    .subcats a:hover {
+      border-color: #800000;
+      color: #800000;
+      background: #fdf2f2;
+    }
   </style>
 </head>
 <body>
