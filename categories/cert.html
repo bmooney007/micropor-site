@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CERT Products | Micropor</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html">Micropor</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="gloves.html">Gloves</a>
+      <a href="respirators.html">Respirators</a>
+      <a href="cert.html">CERT</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>CERT Products</h1>
+    <div class="grid" id="grid"></div>
+  </div>
+  <footer><p>© 2026 Micropor</p></footer>
+  <script src="../js/products.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filtered = products.filter(p => p.category === "cert");
+      const grid = document.getElementById("grid");
+      grid.innerHTML = filtered.map(p => `
+        <div class="card"><div class="card-body">
+          <h3>${p.title}</h3>
+          <span class="price">$${p.price}</span>
+          <p><a href="../products/${p.slug}.html">View Details</a></p>
+        </div></div>`).join("");
+    });
+  </script>
+</body>
+</html>
